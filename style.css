@@ -146,3 +146,63 @@
                     .infos div p{
                         font-size: 12px;
                     }
+
+@media (max-width: 768px){
+    #header{
+        margin: 4px 12px;
+        grid-template-columns: 1fr 1fr;
+    }
+        .head-1{
+            margin: 0;
+            grid-template-columns: 1fr;
+            justify-items: flex-start;
+        }
+        .menu{
+                display: none;
+            }
+        .head-2{
+            display: none;
+        }
+        .head-3{
+            margin: 0;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    #main{
+        flex-direction: column;
+    }
+        .section{
+            margin: 0;
+            width: 100%;
+        }
+            .title{
+                font-size: 16px;
+                margin: 6px;
+            }
+            .actions{
+                margin: 6px;
+                flex-wrap: wrap;
+            }
+                .wrap{
+                    width: 50%;
+                    margin-bottom: 10px;
+                }
+                .wrap:nth-child(n+3){
+                    width: 25%;
+                }
+                .action img{
+                    width: 14px;
+                }
+                .action p{
+                    font-size: 12px;
+                }
+            .actions button{
+                width: 36vw;
+            }
+            .views{
+                padding: 0 6px 0 6px;
+            }
+            .description{
+                padding: 0 6px 0 6px;
+                width: 100%;
+            }
+}
